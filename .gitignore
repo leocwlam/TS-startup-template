@@ -1,0 +1,22 @@
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Yarn Integrity file
+.yarn-integrity
+yarn-error.log
+yarn.lock
+
+#package.json
+package-lock.json
+
+#.eslintrc
+
+# Dependence and auto gen files
+node_modules/
+.scannerwork/
+.nyc_output/
+coverage/
+dist/
