@@ -28,7 +28,6 @@
 # <a href="#TS-startup-template">^</a><a name="install"></a>Installation
 
 - Install Node.js and typescript on your computer
-- Install Dependency
 
 ```bash
 $ git clone https://github.com/leocwlam/TS-startup-template.git project
