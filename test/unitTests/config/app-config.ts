@@ -1,4 +1,7 @@
 import { expect } from 'chai';
+import { describe, it } from 'mocha';
+
+import { Type, container } from '../../../src/di.config';
 import { AppConfig } from '../../../src/config/app-config';
 
 describe('appConfig Test', function () {
@@ -11,7 +14,8 @@ describe('appConfig Test', function () {
   });
 
   it('Fail to load config throw exception', function () {
-    const appConfig = new AppConfig();
+    const appConfig = container.get<AppConfig>(Type.AppConfig);
+    expect(appConfig.config()).to.not.equal(null);
     expect(() => appConfig.load()).to.throw();
   });
 });
