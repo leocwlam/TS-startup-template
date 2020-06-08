@@ -12,6 +12,6 @@ describe('appConfig Test', function () {
 
   it('Fail to load config throw exception', function () {
     const appConfig = new AppConfig();
-    expect(appConfig.load()).to.throw();
+    expect(() => appConfig.load()).to.throw();
   });
 });
