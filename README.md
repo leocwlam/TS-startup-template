@@ -3,6 +3,7 @@
 > Provide the basic TypeScript startup framework to help initial any project implementation. It can be easy to inject any logging mechanism and integrate with any service framework.
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/leocwlam/system-task/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/leocwlam/TS-startup-template.svg?branch=master)](https://travis-ci.org/leocwlam/TS-startup-template)
 [![Dependency Status](https://david-dm.org/leocwlam/TS-startup-template.svg)](https://david-dm.org/leocwlam/TS-startup-template)
 [![devDependency Status](https://david-dm.org/leocwlam/TS-startup-template/dev-status.svg)](https://david-dm.org/leocwlam/TS-startup-template?type=dev)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
