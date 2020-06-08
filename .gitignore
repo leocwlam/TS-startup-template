@@ -18,5 +18,6 @@ package-lock.json
 node_modules/
 .scannerwork/
 .nyc_output/
+docs/typedoc/
 coverage/
 dist/

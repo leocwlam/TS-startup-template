@@ -1,0 +1,7 @@
+{
+  "out": "./docs/typedoc/",
+  "exclude": "**/test/**",
+  "disableOutputCheck": true,
+  "ignoreCompilerErrors": true,
+  "mode": "file"
+}
