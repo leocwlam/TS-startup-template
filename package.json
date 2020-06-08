@@ -5,14 +5,15 @@
   "private": true,
   "main": "dist/server.js",
   "scripts": {
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "clean": "rmdir /S /Q dist",
-    "test": "nyc --reporter=html --reporter=text mocha --require ts-node/register test/**/*.ts --timeout 5000",
-    "test:watch": "mocha --require ts-node/register --watch --watch-files src, test/**/*.ts",
     "build": "tsc -p tsconfig.json",
+    "clean": "rmdir /S /Q dist",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "start": "node dist/server",
     "start:dev": "ts-node src/server",
-    "start": "node dist/server"
+    "test": "nyc --reporter=html --reporter=text mocha --require ts-node/register test/**/*.ts --timeout 5000",
+    "test:watch": "mocha --require ts-node/register --watch --watch-files src, test/**/*.ts"
   },
   "keywords": [],
   "author": "Leo Lam",
