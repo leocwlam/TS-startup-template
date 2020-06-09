@@ -1,7 +1,8 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import { Type, container } from '../../../src/di.config';
+import { Type } from '../../../src/di.type';
+import { container } from '../../../src/di.config';
 import { AppConfig } from '../../../src/config/app-config';
 
 describe('appConfig Test', function () {
