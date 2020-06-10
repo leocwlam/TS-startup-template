@@ -2,23 +2,46 @@
 import { inject, injectable } from 'inversify';
 import { Type } from '../../di.type';
 
-import { Logger } from './logger';
-
-export const enum Level {
-  error,
-  warn,
-  info,
-  verbose,
-  debug,
-  silly,
-}
+import { Level, Logger } from './logger';
 
 @injectable()
 export class AppLogger implements Logger {
   @inject(Type.ExternalLogger) private externalLogCall: any;
+  
+  isApplyMessageFormat: boolean = false;
 
   private execute(level: Level, message: string, optional?: any): void {
-    this.externalLogCall(level, message, optional);
+    if (this.isApplyMessageFormat) {
+      this.externalLogCall(this.messageFormat(level, message, optional));
+    } else {
+      this.externalLogCall(level, message, optional);
+    }
+  }
+
+  messageFormat(level: Level, message: string, optional?: any): string {
+    let result: string = 'Information';
+    switch (level) {
+    case Level.error:
+      result = 'Error';
+      break;
+    case Level.warn:
+      result = 'Warning';
+      break;
+    case Level.info:
+      result = 'Information';
+      break;
+    case Level.verbose:
+      result = 'Verbose';
+      break;
+    case Level.debug:
+      result = 'Debug';
+      break;
+    case Level.silly:
+      result = 'Silly';
+      break;
+    }
+
+    return optional? `${result}: ${message} - ${JSON.stringify(optional)}`: `${result}: ${message}`;
   }
 
   error(message: string, optional?: any): void {

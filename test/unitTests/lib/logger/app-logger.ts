@@ -4,7 +4,8 @@ import { Container } from 'inversify';
 
 import { Type } from '../../../../src/di.type';
 import { container } from '../../../.././src/di.config';
-import { Level, AppLogger } from '../../../../src/lib/logger/app-logger';
+import { Level } from '../../../../src/lib/logger/logger';
+import { AppLogger } from '../../../../src/lib/logger/app-logger';
 
 describe('AppLogger Test', function () {
   it('Success call all log functions', function () {
@@ -36,7 +37,8 @@ describe('AppLogger Test', function () {
 
   it('Success call all log functions from app', function () {
     const appLogger = container.get<AppLogger>(Type.AppLogger);
-    expect(() => appLogger.error('Error Message')).to.not.throw();
+    appLogger.isApplyMessageFormat = true;
+    expect(() => appLogger.error('Error Message', {trace: 'test'})).to.not.throw();
     expect(() => appLogger.warn('Warning Message')).to.not.throw();
     expect(() => appLogger.log('Log Message')).to.not.throw();
     expect(() => appLogger.verbose('Verbose Message')).to.not.throw();

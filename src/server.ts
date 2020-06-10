@@ -8,8 +8,9 @@ import { AppLogger } from './lib/logger/app-logger';
 async function start() {
   const appConfig = container.get<AppConfig>(Type.AppConfig).config();
   const logger = container.get<AppLogger>(Type.AppLogger);
+  logger.isApplyMessageFormat = true;
 
-  logger.log(`Welcome to [${appConfig.name}]`);
+  logger.log(`Welcome to '${appConfig.name}'`);
 }
 
 start();
