@@ -30,11 +30,21 @@
 
 # <a href="#TS-startup-template">^</a><a name="install"></a>Installation
 
+**Create your new project from TS-startup-template**
+
 - Install Node.js and typescript on your computer
+- Clone TS-startup-template repo
+- Reset to the new project remote repo e.g. https://github.com/tester/project.git
+- Change the Project Name e.g. Project
+- Change the Project Description e.g. Project descripotion
+- npm install
 
 ```bash
 $ git clone https://github.com/leocwlam/TS-startup-template.git project
 $ cd project
+$ git remote set-url origin https://github.com/tester/project.git
+$ npx json -I -f package.json -e 'this.name="Project"'
+$ npx json -I -f package.json -e 'this.description="Project descripotion"'
 $ npm install
 ```
 
