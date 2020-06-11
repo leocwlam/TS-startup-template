@@ -9,6 +9,7 @@
 [![devDependency Status](https://david-dm.org/leocwlam/TS-startup-template/dev-status.svg)](https://david-dm.org/leocwlam/TS-startup-template?type=dev)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Known Vulnerabilities](https://snyk.io/test/github/leocwlam/TS-startup-template/badge.svg)](https://snyk.io/test/github/leocwlam/TS-startup-template)
+[![start with why](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](https://github.com/leocwlam/TS-startup-template/wiki)
 
 # Contents
 
