@@ -107,7 +107,7 @@ Only need to deploy the following folders and files
 
 - All files are under ./dist folder after build process
 - node_modules folder
-- .package.json
+- package.json
 
 # <a href="#system-service">^</a><a name="license"></a>License
 
