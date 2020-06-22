@@ -1,6 +1,7 @@
 {
   "name": "project-template",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "original-template-version": "2.0.0",
   "description": "",
   "private": true,
   "main": "dist/server.js",

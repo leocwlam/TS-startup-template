@@ -45,6 +45,9 @@ $ cd project
 $ git remote set-url origin https://github.com/tester/project.git
 $ npx json -I -f package.json -e 'this.name="Project"'
 $ npx json -I -f package.json -e 'this.description="Project descripotion"'
+$ npx json -I -f package.json -e 'this.version="1.0.0"'
+$ npx json -I -f app-config.json -e 'this.name="Project"'
+$ npx json -I -f app-config.json -e 'this.description="Project descripotion"'
 $ npm install
 ```
 
