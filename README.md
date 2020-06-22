@@ -103,11 +103,12 @@ $ npm run format
 
 **Make sure build before deployment**
 
-Only need to deploy the following folders and files
+Only need to deploy the following folders and files after build process
 
-- All files are under ./dist folder after build process
+- dist folder
 - node_modules folder
 - package.json
+- app-config.json
 
 # <a href="#system-service">^</a><a name="license"></a>License
 

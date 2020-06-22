@@ -1,6 +1,6 @@
 import { injectable } from 'inversify';
 
-import * as APPCONFIG from '../app-config.json';
+const APPCONFIG = require('../../app-config.json');
 // eslint-disable-next-line no-unused-vars
 import { Config } from './config';
 
