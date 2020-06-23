@@ -30,7 +30,7 @@
 
 # <a href="#TS-startup-template">^</a><a name="install"></a>Installation
 
-**Create your new project from TS-startup-template**
+**Create your new custom project from TS-startup-template**
 
 - Install Node.js and typescript on your computer
 - Clone TS-startup-template repo
@@ -106,7 +106,7 @@ $ npm run format
 
 **Make sure build before deployment**
 
-Only need to deploy the following folders and files after build process
+Only need to deploy the following folders and files after the build process
 
 - dist folder
 - node_modules folder
