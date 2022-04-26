@@ -23,7 +23,7 @@
   "author": "Leo Lam",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.26.1",
+    "axios": "^0.27.1",
     "inversify": "^6.0.1",
     "reflect-metadata": "^0.1.13"
   },
